@@ -2,7 +2,7 @@ const crypto = require("crypto");
 const blake2 = require("blake2.wasm");
 const { StaticPool } = require("node-worker-threads-pool");
 
-const count = 32;
+const count = 16;
 
 const incNonce = (nonce) => {
   if (nonce[4] === 255) {
@@ -58,11 +58,7 @@ const Hash = {
     const chunk = 256 * 256 * count;
     while (true) {
       const { result, index } = await Promise.race(promises);
-      console.log(
-        "Processed: %d hashes, in %ds",
-        ++i * chunk,
-        (new Date() - date) / 1000.0
-      );
+      console.log("%d hashes, %ds", ++i * chunk, (new Date() - date) / 1000.0);
 
       if (result) {
         pool.destroy();
