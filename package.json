@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "Robin Thomas <robinthomas2591@gmail.com>",
+  "license": "MIT",
   "engines": {
     "node": ">=13.2.0"
   },
@@ -10,8 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/nano-piper/dpow.git"
   },
-  "author": "Robin Thomas <robinthomas2591@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nano-piper/dpow/issues"
   },
@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "bignumber.js": "^9.0.0",
-    "blake2": "^4.0.0",
     "blake2.wasm": "^0.1.0",
     "node-worker-threads-pool": "^1.2.2"
   },

@@ -1,0 +1,8 @@
+{
+  "threads": 5,
+  "heartbeat": 60,
+  "bootstrap": {
+    "host": "https://piper-dpow-master.now.sh",
+    "port": "80"
+  }
+}
